@@ -14,7 +14,7 @@ body{
     display: flex;
     gap: 4px;
 }
-#form input{
+#form .input{
     height: 20px;
     border: 1px solid #777572;
     border-radius: 2px;
@@ -26,6 +26,7 @@ body{
     border-radius: 2px;
     cursor: pointer;
 }
+
 hr{
     border: 1px solid #DDDDDD;
     background-color: #DDDDDD;
@@ -96,7 +97,6 @@ hr{
 
 
 /*RESPONSIVE*/
-
 @media only screen and (max-width: 1190px) {
     .card{
         width: 48%;
