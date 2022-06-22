@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard&family=Open+Sans&family=Sorts+Mill+Goudy&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.content{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+hr{
+    border: 1px solid #DDDDDD;
+}
+
+
+/* ESTILOS PARA CARD */
+#cardContainer{
+    display: flex;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 360px;
+    position: relative;
+    margin-top: 30px;
+}
+.card .delete{
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 25px;
+    height: 26px;
+    width: 26px;
+    font-size: 1rem;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    cursor: pointer;
+}
+.card a{
+    text-decoration: none;
+    color: #777572;
+    border-top: 3px solid #C00000;
+    display: block;
+    box-shadow: 7px 4px 25px 0px rgb(0 0 0 / 20%);
+}
+.card-title{
+    padding: 20px 25px 10px 25px;
+    min-height: 120px;
+}
+.card-title span{
+    font-size: 0.8rem;
+}
+.card-title h3{
+    font-size: 1rem;
+    color: #C00000;
+    letter-spacing: 0.3px;
+    margin: 10px 0 20px 0;
+    
+}
+.card-icons{
+    background-color: #F1F1F1;
+    padding: 20px;
+}
+.card-icons div{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+.card-icons div:last-child{
+    margin-bottom: 0px;
+}
+
