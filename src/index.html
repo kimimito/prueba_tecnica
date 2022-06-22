@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="content">
-        <form action="">
-
-
-        </form>
+        <div id="form">
+            <input class="input" name="title" type="text" autocomplete="off">
+            <button id="btnCreateCard" type="button" class="btn">+</button>
+        </div>
         <hr>
         <div id="cardContainer">
             <div class="card">
@@ -154,9 +154,166 @@
                 </a>
             </div>
         </div>
-    </div> 
-    <div style="margin: 0 auto; text-align: center;">
-        <img src="img/Lista-dinamica.png" alt="">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Prueba Tecnica</title>
+</head>
+<body>
+    <div class="content">
+        <div id="form">
+            <input class="input" name="title" type="text" autocomplete="off">
+            <button id="btnCreateCard" type="button" class="btn">+</button>
+        </div>
+        <hr>
+        <div id="cardContainer">
+            <div class="card">
+                <button class="delete" onclick="removeElement(event)">X</button>
+                <a href="#">
+                    <div class="card-title">
+                        <span>Lorem</span>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat neque ut purus congue tempor.</h3>
+                    </div>
+                    <div class="card-icons">
+                        <div>
+                            <img src="img/icona-24-gris-rama.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-creditos.svg" alt="icon"/><span>Lorem | Ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-presencial.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-map-fitxa.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <button class="delete" onclick="removeElement(event)">X</button>
+                <a href="#">
+                    <div class="card-title">
+                        <span>Lorem</span>
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <div class="card-icons">
+                        <div>
+                            <img src="img/icona-24-gris-rama.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-creditos.svg" alt="icon"/><span>Lorem | Ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-presencial.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-map-fitxa.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <button class="delete" onclick="removeElement(event)">X</button>
+                <a href="#">
+                    <div class="card-title">
+                        <span>Lorem</span>
+                        <h3>Lorem ipsul Dolor sit</h3>
+                    </div>
+                    <div class="card-icons">
+                        <div>
+                            <img src="img/icona-24-gris-rama.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-creditos.svg" alt="icon"/><span>Lorem | Ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-presencial.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-map-fitxa.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <button class="delete" onclick="removeElement(event)">X</button>
+                <a href="#">
+                    <div class="card-title">
+                        <span>Lorem</span>
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <div class="card-icons">
+                        <div>
+                            <img src="img/icona-24-gris-rama.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-creditos.svg" alt="icon"/><span>Lorem | Ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-presencial.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-map-fitxa.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <button class="delete" onclick="removeElement(event)">X</button>
+                <a href="#">
+                    <div class="card-title">
+                        <span>Lorem</span>
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <div class="card-icons">
+                        <div>
+                            <img src="img/icona-24-gris-rama.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-creditos.svg" alt="icon"/><span>Lorem | Ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-presencial.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-map-fitxa.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <button class="delete" onclick="removeElement(event)">X</button>
+                <a href="#">
+                    <div class="card-title">
+                        <span>Lorem</span>
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <div class="card-icons">
+                        <div>
+                            <img src="img/icona-24-gris-rama.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-creditos.svg" alt="icon"/><span>Lorem | Ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-presencial.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                        <div>
+                            <img src="img/icona-24-gris-map-fitxa.svg" alt="icon"/><span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 
     <script src="index.js"></script>
