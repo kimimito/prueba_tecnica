@@ -3,10 +3,10 @@ function removeElement(event) {
 }
 
 (function load(){
-    const form = document.getElementById('form')
-    const cardContainer = document.getElementById('cardContainer')
-    const btnCreateCard = document.getElementById('btnCreateCard')
-    const inputTitle = document.getElementById('inputTitle')
+    const form = document.getElementById('form');
+    const cardContainer = document.getElementById('cardContainer');
+    const btnCreateCard = document.getElementById('btnCreateCard');
+    const inputTitle = document.getElementById('inputTitle');
 
     const templateCard = title => {
         return (`
@@ -31,31 +31,31 @@ function removeElement(event) {
                     </div>
                 </div>
             </a>
-        `)
+        `);
     }
 
     btnCreateCard.addEventListener('click', (event) => {
         if(form.title.value != ""){
             event.preventDefault();
-            createNewCard()
+            createNewCard();
         }
-    })
+    });
 
     inputTitle.addEventListener("keypress", (event) => {
         if (event.key === 'Enter' && form.title.value != "") {
             event.preventDefault();
-            createNewCard()
-          }
-    })
+            createNewCard();
+        }
+    });
 
     const createNewCard = () => {
-        const newCard = document.createElement('div')
-        newCard.classList.add('card')
-        newCard.innerHTML = templateCard(`${form.title.value}`)
+        const newCard = document.createElement('div');
+        newCard.classList.add('card');
+        newCard.innerHTML = templateCard(`${form.title.value}`);
 
-        cardContainer.insertBefore(newCard, cardContainer.firstChild)
+        cardContainer.insertBefore(newCard, cardContainer.firstChild);
 
-        form.reset()
+        form.reset();
     }
 
 })()
