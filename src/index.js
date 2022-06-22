@@ -34,8 +34,9 @@ function removeElement(event) {
         `)
     }
 
-    btnCreateCard.addEventListener('click', () => {
+    btnCreateCard.addEventListener('click', (event) => {
         if(form.title.value != ""){
+            event.preventDefault();
             const newCard = document.createElement('div')
             newCard.classList.add('card')
             newCard.innerHTML = templateCard(`${form.title.value}`)
