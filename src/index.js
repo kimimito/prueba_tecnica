@@ -5,8 +5,6 @@ function removeElement(event) {
 (function load(){
     const form = document.getElementById('form');
     const cardContainer = document.getElementById('cardContainer');
-    const btnCreateCard = document.getElementById('btnCreateCard');
-    const inputTitle = document.getElementById('inputTitle');
 
     const templateCard = title => {
         return (`
@@ -34,19 +32,12 @@ function removeElement(event) {
         `);
     }
 
-    btnCreateCard.addEventListener('click', (event) => {
+    form.onsubmit = (e) => {
+        e.preventDefault()
         if(form.title.value != ""){
-            event.preventDefault();
             createNewCard();
         }
-    });
-
-    inputTitle.addEventListener("keypress", (event) => {
-        if (event.key === 'Enter' && form.title.value != "") {
-            event.preventDefault();
-            createNewCard();
-        }
-    });
+    }
 
     const createNewCard = () => {
         const newCard = document.createElement('div');
