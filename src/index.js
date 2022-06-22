@@ -37,27 +37,25 @@ function removeElement(event) {
     btnCreateCard.addEventListener('click', (event) => {
         if(form.title.value != ""){
             event.preventDefault();
-            const newCard = document.createElement('div')
-            newCard.classList.add('card')
-            newCard.innerHTML = templateCard(`${form.title.value}`)
-
-            cardContainer.insertBefore(newCard, cardContainer.firstChild)
-
-            form.reset()
+            createNewCard()
         }
     })
 
-    inputTitle.addEventListener("keypress", (event)=> {
+    inputTitle.addEventListener("keypress", (event) => {
         if (event.key === 'Enter' && form.title.value != "") {
             event.preventDefault();
-            const newCard = document.createElement('div')
-            newCard.classList.add('card')
-            newCard.innerHTML = templateCard(`${form.title.value}`)
-
-            cardContainer.insertBefore(newCard, cardContainer.firstChild)
-
-            form.reset()
+            createNewCard()
           }
     })
+
+    const createNewCard = () => {
+        const newCard = document.createElement('div')
+        newCard.classList.add('card')
+        newCard.innerHTML = templateCard(`${form.title.value}`)
+
+        cardContainer.insertBefore(newCard, cardContainer.firstChild)
+
+        form.reset()
+    }
 
 })()
