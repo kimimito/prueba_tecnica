@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Coustard&family=Open+Sans&family=Sorts+Mill+Goudy&display=swap');
 
 :root {
-    --card-bg-color:  #F1F1F1;
-    --card-red-color: #C00000;
-    --card-text-color:#777572;
-    --hr-bg-color:    #DDDDDD;
-    --white:          #FFFFFF;
-    --black:          #000000;
+    --card-bg-color:    #F1F1F1;
+    --card-title-color: #C00000;
+    --card-text-color:  #777572;
+    --hr-bg-color:      #DDDDDD;
+    --white:            #FFFFFF;
+    --black:            #000000;
 }
 
 body{
@@ -71,7 +71,7 @@ hr{
 .card a{
     text-decoration: none;
     color: var(--card-text-color);
-    border-top: 3px solid var(--card-red-color);
+    border-top: 3px solid var(--card-title-color);
     display: block;
     box-shadow: 7px 4px 25px 0px rgb(0 0 0 / 20%);
 }
@@ -84,7 +84,7 @@ hr{
 }
 .card-title h3{
     font-size: 1rem;
-    color: var(--card-red-color);
+    color: var(--card-title-color);
     letter-spacing: 0.3px;
     margin: 10px 0 20px 0;
     
