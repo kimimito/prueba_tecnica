@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="content">
-        <form id="form">
-            <input id="inputTitle" class="input" name="title" type="text" autocomplete="off">
-            <button id="btnCreateCard" type="button" class="btn">+</button>
+        <form id="form" onsubmit="return createNewCard()">
+            <input class="input" name="title" type="text" autocomplete="off">
+            <button type="submit" class="btn">+</button>
         </form>
         <hr>
         <div id="cardContainer">
