@@ -2,13 +2,35 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+    padding: 15px;
 }
 .content{
     max-width: 1150px;
     margin: 0 auto;
 }
+
+#form{
+    display: flex;
+    gap: 4px;
+}
+#form input{
+    height: 20px;
+    border: 1px solid #777572;
+    border-radius: 2px;
+}
+#form .btn{
+    height: 24px;
+    font-size: 1rem;
+    border: 1px solid #777572;
+    border-radius: 2px;
+    cursor: pointer;
+}
 hr{
     border: 1px solid #DDDDDD;
+    background-color: #DDDDDD;
+    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 
@@ -17,11 +39,11 @@ hr{
     display: flex;
     gap: 33px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 .card{
     width: 360px;
     position: relative;
-    margin-top: 30px;
 }
 .card .delete{
     color: #FFFFFF;
@@ -72,3 +94,27 @@ hr{
     margin-bottom: 0px;
 }
 
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 1190px) {
+    .card{
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 876px) {
+    .card{
+        width: 46%;
+    }
+    .card-title{
+        min-height: 160px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+    .card-title{
+        min-height: auto;
+    }
+}
