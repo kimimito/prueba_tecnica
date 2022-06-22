@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Coustard&family=Open+Sans&family=Sorts+Mill+Goudy&display=swap');
 
+:root {
+    --card-bg-color:  #F1F1F1;
+    --card-red-color: #C00000;
+    --card-text-color:#777572;
+    --hr-bg-color:    #DDDDDD;
+    --white:          #FFFFFF;
+    --black:          #000000;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     margin-top: 40px;
@@ -16,20 +25,20 @@ body{
 }
 #form .input{
     height: 20px;
-    border: 1px solid #777572;
+    border: 1px solid var(--card-text-color);
     border-radius: 2px;
 }
 #form .btn{
     height: 24px;
     font-size: 1rem;
-    border: 1px solid #777572;
+    border: 1px solid var(--card-text-color);
     border-radius: 2px;
     cursor: pointer;
 }
 
 hr{
-    border: 1px solid #DDDDDD;
-    background-color: #DDDDDD;
+    border: 1px solid var(--hr-bg-color);
+    background-color: var(--hr-bg-color);
     margin-bottom: 30px;
     margin-top: 25px;
 }
@@ -47,8 +56,8 @@ hr{
     position: relative;
 }
 .card .delete{
-    color: #FFFFFF;
-    background-color: #000000;
+    color: var(--white);
+    background-color: var(--black);
     border: none;
     border-radius: 25px;
     height: 26px;
@@ -61,8 +70,8 @@ hr{
 }
 .card a{
     text-decoration: none;
-    color: #777572;
-    border-top: 3px solid #C00000;
+    color: var(--card-text-color);
+    border-top: 3px solid var(--card-red-color);
     display: block;
     box-shadow: 7px 4px 25px 0px rgb(0 0 0 / 20%);
 }
@@ -75,13 +84,13 @@ hr{
 }
 .card-title h3{
     font-size: 1rem;
-    color: #C00000;
+    color: var(--card-red-color);
     letter-spacing: 0.3px;
     margin: 10px 0 20px 0;
     
 }
 .card-icons{
-    background-color: #F1F1F1;
+    background-color: var(--card-bg-color);
     padding: 20px;
 }
 .card-icons div{
