@@ -23,6 +23,9 @@ body{
     display: flex;
     gap: 4px;
 }
+#form label{
+    display: none;
+}
 #form .input{
     height: 20px;
     border: 1px solid var(--card-text-color);

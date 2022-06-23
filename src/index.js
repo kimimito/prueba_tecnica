@@ -9,7 +9,7 @@ function removeElement(event) {
     const templateCard = title => {
         return (`
             <button class="delete" onclick="removeElement(event)">X</button>
-            <a href="#">
+            <a href="google.es" target="_blank">
                 <div class="card-title">
                     <span>Lorem</span>
                     <h3>${title}</h3>
