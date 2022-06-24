@@ -36,6 +36,7 @@ function removeElement(event) {
         e.preventDefault()
         if(form.title.value != ""){
             createNewCard(`${form.title.value}`);
+            form.reset();
         }
     }
 
@@ -45,8 +46,6 @@ function removeElement(event) {
         newCard.innerHTML = templateCard(title);
 
         cardContainer.insertBefore(newCard, cardContainer.firstChild);
-
-        form.reset();
     }
 
     const initCardTitle = [
