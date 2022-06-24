@@ -9,7 +9,7 @@ function removeElement(event) {
     const templateCard = title => {
         return (`
             <button class="delete" onclick="removeElement(event)">X</button>
-            <a href="google.es" target="_blank">
+            <a href="https://web.gencat.cat/ca/inici" target="_blank">
                 <div class="card-title">
                     <span>Lorem</span>
                     <h3>${title}</h3>
@@ -35,18 +35,31 @@ function removeElement(event) {
     form.onsubmit = (e) => {
         e.preventDefault()
         if(form.title.value != ""){
-            createNewCard();
+            createNewCard(`${form.title.value}`);
         }
     }
 
-    const createNewCard = () => {
+    const createNewCard = (title) => {
         const newCard = document.createElement('div');
         newCard.classList.add('card');
-        newCard.innerHTML = templateCard(`${form.title.value}`);
+        newCard.innerHTML = templateCard(title);
 
         cardContainer.insertBefore(newCard, cardContainer.firstChild);
 
         form.reset();
     }
+
+    const initCardTitle = [
+        'Lorem ipsum',
+        'Lorem ipsum',
+        'Lorem ipsum',
+        'Lorem ipsul Dolor sit',
+        'Lorem ipsum',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat neque ut purus congue tempor.'
+    ]
+
+    initCardTitle.forEach((title) =>{
+        createNewCard(title);
+    })
 
 })()
