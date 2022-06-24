@@ -13,9 +13,10 @@ cómo base.
 ![Lista-dinamica](https://user-images.githubusercontent.com/93122874/174850967-0bac413f-536b-42fe-8385-661c253207d2.png)
 
 
-## XXX
+## Tecnologia usada
 He utilizado JS, CSS3 y HTML5 para realizar la prueba.
 Al no haber especificaciones para navegadores en concreto he usado flex para la correcta visualizacion de las tarjetas en las resoluciones de desktop, tablet y mobile.
 Las seis primeras tarjetas se cargan dinamicamente desde JS simulando una carga inicial.
 Utilizo h3 como titulo de las tarjetas asumiendo que la pagina que contenga la seccion dispondra de h1 y h2.
 
+Para visionar la prueba tan solo es abrir el archivo index.html que se encuentra en la carpeta src en un navegador.
