@@ -14,9 +14,6 @@ cómo base.
 
 
 ## Tecnologia usada
-He utilizado JS, CSS3 y HTML5 para realizar la prueba.
-Al no haber especificaciones para navegadores en concreto he usado flex para la correcta visualizacion de las tarjetas en las resoluciones de desktop, tablet y mobile.
-Las seis primeras tarjetas se cargan dinamicamente desde JS simulando una carga inicial.
-Utilizo h3 como titulo de las tarjetas asumiendo que la pagina que contenga la seccion dispondra de h1 y h2.
+He utilizado JS, CSS3 y HTML5 para realizar la prueba. Al no haber especificaciones para navegadores en concreto he usado flex para la correcta visualización de las tarjetas en las resoluciones de desktop, tablet y móvil. Las seis primeras tarjetas se cargan dinámicamente desde JS simulando una carga inicial. Utilizo h3 como título de las tarjetas asumiendo que la página que contenga la sección dispondrá de h1 y h2.
 
-Para visionar la prueba tan solo es abrir el archivo index.html que se encuentra en la carpeta src en un navegador.
+Para visionar la prueba tan solo es necesario abrir el archivo index.html que se encuentra en la carpeta src en un navegador.
